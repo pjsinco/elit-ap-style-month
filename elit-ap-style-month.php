@@ -3,7 +3,7 @@
  * Plugin Name: Elit AP Style Month
  * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
  * Description: Modify the month so it conforms to AP style
- * Version: 0.0.1
+ * Version: 1.0.0
  * Author: Patrick Sinco
  * License: GPL2
  */
