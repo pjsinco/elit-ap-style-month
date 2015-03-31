@@ -3,7 +3,6 @@
 class Test_Elit_AP_Style_Date extends WP_UnitTestCase {
 
   private $test_months;
-
   private $test_dates;
 
   public function setUp() {
@@ -60,7 +59,7 @@ class Test_Elit_AP_Style_Date extends WP_UnitTestCase {
     );
  
     // post_date is in the same format that comes out of MySQL
-    $this->test_dates = array(
+    $this->test_dates_with_mysql_date = array(
       array(
         'post_date' => '2016-01-20 00:00:50',
         'day_of_week' => 'Wednesday',
@@ -363,15 +362,4 @@ class Test_Elit_AP_Style_Date extends WP_UnitTestCase {
     }
   }
 
-  public function test_full_month_is_converted_to_ap_month() {
-    $this->markTestIncomplete();
-    
-    foreach ( $this->test_months as $month ) {
-      $this->assertSame( 
-        elit_ap_style_date( $month['full_month'] ), 
-        $month['lap_month'] 
-      );
-    }
-  }
-  
 } // eoc
