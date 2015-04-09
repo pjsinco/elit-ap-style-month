@@ -8,6 +8,11 @@
  * License: GPL2
  */
 
+if ( !defined( 'WPINC' ) ) {
+  die;
+}
+
+
 function elit_ap_style_month( $the_date, $d ) {
   // make sure we have a month to replace
   if ( elit_has_month_format( $d ) === False ) {
